@@ -5,24 +5,21 @@ import PackageDescription
 
 let package = Package(
     name: "SygicMaps",
+    platforms: [
+        .iOS(.v11)
+    ],
     products: [
-        // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "SygicMaps",
             targets: ["SygicMaps"]),
     ],
     dependencies: [
-        // Dependencies declare other packages that this package depends on.
-        // .package(url: /* package url */, from: "1.0.0"),
+        .package(url: "https://github.com/henrich-mauritz/SygicAuth.git", from: "1.3.1")
     ],
     targets: [
-        // Targets are the basic building blocks of a package. A target can define a module or a test suite.
-        // Targets can depend on other targets in this package, and on products in packages this package depends on.
-        .target(
+        .binaryTarget(
             name: "SygicMaps",
-            dependencies: []),
-        .testTarget(
-            name: "SygicMapsTests",
-            dependencies: ["SygicMaps"]),
+            url: "https://public.repo.sygic.com/repository/maven-sygic-releases/com/sygic/sdk/maps-ios/22.1.2/maps-ios-22.1.2.zip",
+            checksum: "11130f525b149fee079ac31018b754ca36dc9c02ba78526b44b5c0621736d916")
     ]
 )

@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "sygicauth",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/henrich-mauritz/SygicAuth.git",
+      "state" : {
+        "revision" : "4f48c6d2567c41a69dab0e9931e0e067a094e784",
+        "version" : "1.3.1"
+      }
+    }
+  ],
+  "version" : 2
+}
