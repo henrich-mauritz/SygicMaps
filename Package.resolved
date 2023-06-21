@@ -5,7 +5,7 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/henrich-mauritz/SygicAuth.git",
       "state" : {
-        "revision" : "1e62745bb9ebfd2bc1e91677fe1b2d360312980f",
+        "revision" : "4f48c6d2567c41a69dab0e9931e0e067a094e784",
         "version" : "1.3.1"
       }
     }
